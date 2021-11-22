@@ -63,7 +63,7 @@ oMyShortCut.Save
 ```vbs
 WshShell = CreateObject("WScript.Shell")
 strDesktop = WshShell.SpecialFolders("Desktop")
-oUrlLink = WshShell.CreateShortcut(strDesktop+"\Microsoft Web Site.URL")
+Set oUrlLink = WshShell.CreateShortcut(strDesktop+"\Microsoft Web Site.URL")
 oUrlLink.TargetPath = "http://www.microsoft.com"
 oUrlLink.Save
 ```
